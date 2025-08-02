@@ -140,7 +140,7 @@ exports.handler = async (event) => {
         });
 
 
-        if (Object.keys(formData).length <= 30) {
+        if (Object.keys(formData).length <= 10) {
 
         // Generate a message from all form data
         let messageContent = "You have received a new form submission:\n\n";
