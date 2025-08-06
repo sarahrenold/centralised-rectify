@@ -83,7 +83,7 @@ exports.handler = async (event) => {
 };
 
 
-Main end*/
+/*Main end*/
 
 
 
@@ -169,7 +169,7 @@ exports.handler = async (event) => {
             body: JSON.stringify({ error: error.message }),
         };
     }
-};
+};*/
 
 
 
@@ -282,7 +282,7 @@ exports.handler = async (event) => {
             body: JSON.stringify({ error: error.message }),
         };
     }
-};
-*/
+};*/
+
 
 
